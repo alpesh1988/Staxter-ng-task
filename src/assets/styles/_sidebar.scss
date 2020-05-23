@@ -1,15 +1,15 @@
-real-sidebar {
+staxter-sidebar {
 
-  .real-sidebar-container {
+  .staxter-sidebar-container {
     height: 100vh;
     position: initial;
   }
 
-  .real-sidebar-container.mat-drawer-container {
+  .staxter-sidebar-container.mat-drawer-container {
     background: none;
   }
 
-  .real-sidebar-menu {
+  .staxter-sidebar-menu {
     margin-left: 0.5rem;
   }
 
@@ -18,7 +18,7 @@ real-sidebar {
     padding-top: 1px;
   }
 
-  #real-scroll-to-top-btn {
+  #staxter-scroll-to-top-btn {
     bottom: 1rem;
     border-radius: 20px;
     background: #003a70;
@@ -33,7 +33,7 @@ real-sidebar {
     z-index: 100;
   }
 
-  .real-scroll-to-top-icon {
+  .staxter-scroll-to-top-icon {
     position: relative;
     top: 50%;
     left: 50%;
@@ -44,29 +44,29 @@ real-sidebar {
     width: 2rem;
   }
 
-  .real-sidebar-list-item {
+  .staxter-sidebar-list-item {
     outline: 0;
 
     &:hover {
-      background: $real-app-main-color;
+      background: $staxter-app-main-color;
     }
 
     &.active {
-      background: $real-app-main-color;
+      background: $staxter-app-main-color;
       color: $white;
       outline: 0;
 
       &:hover {
-        background: $real-app-main-color;
+        background: $staxter-app-main-color;
       }
     }
   }
 
-  #real-sidebar-header {
-    background: $real-app-main-color;
+  #staxter-sidebar-header {
+    background: $staxter-app-main-color;
   }
 
-  .real-sidebar-close-btn {
+  .staxter-sidebar-close-btn {
     background: $white;
   }
 
@@ -75,7 +75,7 @@ real-sidebar {
   }
 
   mat-sidenav-content {
-    background: $real-body-bg-color;
+    background: $staxter-body-bg-color;
   }
 
 }

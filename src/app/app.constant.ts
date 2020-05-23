@@ -15,10 +15,11 @@ export const APP_CONSTANTS = {
     COUNTRY_FLAG_ICON_CLASSNAME: 'flag-icon-de',
     default: true
   } ],
-  REAL_CURRENT_LANGUAGE: 'realCurrentLanguage',
+  STAXTER_CURRENT_LANGUAGE: 'staxterCurrentLanguage',
   SHOW_SCROLL_TO_TOP_BUTTON_POSITION: 150,
-
-  PAGES: {
-    DASHBOARD: { NAME: 'DASHBOARD', URL: 'dashboard' }
-  }
+  SIDEBAR_ITEMS: {
+    LATEST_RATES: { NAME: 'Latest rates', URL: 'latest_rates', icon: 'dashboard' },
+    LAST_30_DAYS: { NAME: 'Last 30 days', URL: 'last_30_days', icon: 'replay_30' },
+    TOP_5: { NAME: 'Top 5', URL: 'top_5', icon: 'looks_5' }
+  },
 };

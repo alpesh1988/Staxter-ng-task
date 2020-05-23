@@ -2,25 +2,25 @@ body {
   margin: 0;
   overflow: hidden;
 
-  .real-spinner {
+  .staxter-spinner {
     .black-overlay,
     .loading-text {
       position: fixed !important;
     }
   }
 
-  .real-body-container {
+  .staxter-body-container {
     background: none;
     margin: 1.5rem 2rem 8rem;
   }
 
-  .real-page-title {
+  .staxter-page-title {
     color: $page-title-color;
     font-weight: 400;
     margin-bottom: 1rem;
   }
 
-  .real-tooltip {
+  .staxter-tooltip {
     background: $black;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -31,7 +31,7 @@ body {
     outline: none;
   }
 
-  table.real-table {
+  table.staxter-table {
     border: 1px solid rgba(0, 0, 0, .1);
     width: 100%;
 
@@ -51,38 +51,38 @@ body {
       padding-top: 0.5rem;
     }
 
-    th.real-column-right,
-    td.real-column-right {
+    th.staxter-column-right,
+    td.staxter-column-right {
       padding-right: 1rem;
       text-align: right;
     }
 
-    th.real-column-right .mat-sort-header-container {
+    th.staxter-column-right .mat-sort-header-container {
       justify-content: flex-end;
     }
 
-    th.real-column-center,
-    td.real-column-center {
+    th.staxter-column-center,
+    td.staxter-column-center {
       text-align: center;
     }
 
-    th.real-column-center .mat-sort-header-container {
+    th.staxter-column-center .mat-sort-header-container {
       justify-content: center;
     }
   }
 
-  .real-login-form mat-form-field {
+  .staxter-login-form mat-form-field {
     display: block;
   }
 
-  .real-login-btn {
+  .staxter-login-btn {
     border-radius: 4px;
     font-size: 1.125rem;
     line-height: 3rem;
     width: 100%;
   }
 
-  .real-legend {
+  .staxter-legend {
     border: 1px solid $light-grey;
     border-radius: 4px;
     margin-left: 2rem;
@@ -102,7 +102,7 @@ body {
     font-size: 0.875rem;
   }
 
-  .real-paginator-container {
+  .staxter-paginator-container {
     border: 1px solid rgba(0, 0, 0, 0.12) !important;
   }
 
@@ -115,14 +115,14 @@ body {
     outline: 0;
   }
 
-  .real-mat-icon {
+  .staxter-mat-icon {
     font-size: 2rem;
     margin-right: 0.875rem;
     margin-top: 0.225rem;
     vertical-align: text-bottom;
   }
 
-  .real-alert-message {
+  .staxter-alert-message {
     padding: 1rem;
     position: relative;
 
@@ -133,12 +133,12 @@ body {
       top: 0.925rem;
     }
 
-    .real-times-circle {
+    .staxter-times-circle {
       font-size: 1.5rem;
     }
   }
 
-  button.real-mat-button {
+  button.staxter-mat-button {
     outline: none;
 
     &:focus {
@@ -157,55 +157,55 @@ body {
   }
 
   /* Starts here - Common classses that can be used across pages */
-  .real-cursor-pointer {
+  .staxter-cursor-pointer {
     cursor: pointer;
   }
 
-  .real-cursor-not-allowed {
+  .staxter-cursor-not-allowed {
     cursor: not-allowed;
   }
 
-  .real-float-right {
+  .staxter-float-right {
     float: right;
   }
 
-  .real-clear {
+  .staxter-clear {
     clear: both;
   }
 
-  .real-mt-1 {
+  .staxter-mt-1 {
     margin-top: 1rem;
   }
 
-  .real-mb-1 {
+  .staxter-mb-1 {
     margin-bottom: 1rem;
   }
 
-  .real-mb-half {
+  .staxter-mb-half {
     margin-bottom: 0.5rem;
   }
 
-  .real-mr-1 {
+  .staxter-mr-1 {
     margin-right: 1rem;
   }
 
-  .real-mr-half {
+  .staxter-mr-half {
     margin-right: 0.5rem;
   }
 
-  .real-p-1-5 {
+  .staxter-p-1-5 {
     padding: 1.5rem;
   }
 
-  .real-pos-rel {
+  .staxter-pos-rel {
     position: relative;
   }
 
-  .real-display-if {
+  .staxter-display-if {
     display: inline-flex;
   }
 
-  .real-vertical-align-middle {
+  .staxter-vertical-align-middle {
     vertical-align: middle;
   }
 

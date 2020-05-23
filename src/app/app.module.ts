@@ -12,14 +12,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
 /**
- *  Keycloak module
- */
-
-import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
-import { keycloakInitializer } from './app-keycloak-init';
-
-
-/**
  * Services
  */
 import { LanguageService } from './services/language.service';
@@ -52,7 +44,6 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
   ],
   imports: [
     BrowserModule,
-    KeycloakAngularModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
@@ -63,14 +54,7 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
   entryComponents: [],
   providers: [
     LanguageService,
-    UserService,
-    {
-      provide: APP_INITIALIZER,
-      useFactory: keycloakInitializer,
-      multi: true,
-      deps: [ KeycloakService ]
-    }
-
+    UserService
   ],
   bootstrap: [ AppComponent ]
 } )

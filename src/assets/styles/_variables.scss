@@ -2,16 +2,16 @@ $link-color: #3498db;
 $dark-grey: #999;
 $light-grey: #ccc;
 $page-title-color: #66615b;
-$primary: #003a70;
+$primary: #05729d;
 
 $border-color: $light-grey;
 $border-radius: 4px;
 
 $table-header-bg: #6c7ae0;
-$real-body-bg-color: #fff;
+$staxter-body-bg-color: #fff;
 
-$real-app-accent: #c20834;
+$staxter-app-accent: #c20834;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$real-app-main-color: $primary;
+$staxter-app-main-color: $primary;

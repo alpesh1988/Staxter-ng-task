@@ -1,31 +1,31 @@
-<mat-toolbar id="real-header-mat-toolbar">
+<mat-toolbar id="staxter-header-mat-toolbar">
   <div class="col-lg-9">
-    <button class="real-hamburger-menu" (click)="openSidebar()" mat-button >
+    <button class="staxter-hamburger-menu" (click)="openSidebar()" mat-button >
         <mat-icon [ngStyle]="{'color': '#fff'}" class="material-icons">menu</mat-icon>
     </button> 
     <a [routerLink]="['/']">
-      <img src="assets/images/real-lebensmittelshop-logo.svg" class="real-logo">
+      <img src="assets/images/staxter-logo.png" class="staxter-logo">
     </a>
-    <span id="real-full-app-title" fxHide.lt-sm="true"> {{ 'SITE_NAME' | translate }} </span>
-    <span id="real-short-app-title" fxHide.gt-xs="true"> {{ 'SITE_NAME_SHORT' | translate }} </span>
+    <span id="staxter-full-app-title" fxHide.lt-sm="true"> {{ 'SITE_NAME' | translate }} </span>
+    <span id="staxter-short-app-title" fxHide.gt-xs="true"> {{ 'SITE_NAME_SHORT' | translate }} </span>
   </div>
   <div class="col-lg-3 text-right">
-      <button class="btn dropdown-toggle real-language-dropdown" type="button" id="realLanguagedropdownMenuButton" data-toggle="dropdown">
-        <span class="real-flag-icon flag-icon flag-icon-squared {{currentLanguageFlag}}"></span> 
-        <span class="real-current-language-selected" fxHide.lt-sm="true">{{ currentLanguage }}</span>
+      <button class="btn dropdown-toggle staxter-language-dropdown" type="button" id="realLanguagedropdownMenuButton" data-toggle="dropdown">
+        <span class="staxter-flag-icon flag-icon flag-icon-squared {{currentLanguageFlag}}"></span> 
+        <span class="staxter-current-language-selected" fxHide.lt-sm="true">{{ currentLanguage }}</span>
       </button>
-      <div class="dropdown-menu dropdown-menu-right real-language-dropdown-menu" aria-labelledby="realLanguagedropdownMenuButton">
-        <a class="real-cursor-pointer dropdown-item" *ngFor="let language of availableLanguages" (click)="setCurrentLanguage(language)">
-          <span class="real-country-name"> {{ language.COUNTRY_NAME }} </span>
-          <span class="real-flag-icon flag-icon flag-icon-squared {{language.COUNTRY_FLAG_ICON_CLASSNAME}}"></span>
+      <div class="dropdown-menu dropdown-menu-right staxter-language-dropdown-menu" aria-labelledby="realLanguagedropdownMenuButton">
+        <a class="staxter-cursor-pointer dropdown-item" *ngFor="let language of availableLanguages" (click)="setCurrentLanguage(language)">
+          <span class="staxter-country-name"> {{ language.COUNTRY_NAME }} </span>
+          <span class="staxter-flag-icon flag-icon flag-icon-squared {{language.COUNTRY_FLAG_ICON_CLASSNAME}}"></span>
         </a>
       </div>
-      <span><mat-icon class="real-mat-icon-face" fxHide.lt-sm="true">face</mat-icon> {{ currentUserFirstname }} </span>
-      <button class="real-mat-button" mat-icon-button [matMenuTriggerFor]="userMenu">
+      <span><mat-icon class="staxter-mat-icon-face" fxHide.lt-sm="true">face</mat-icon> {{ currentUserFirstname }} </span>
+      <button class="staxter-mat-button" mat-icon-button [matMenuTriggerFor]="userMenu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #userMenu="matMenu">
-        <button mat-menu-item class="real-logout-btn real-mat-button" (click)="onLogout()">
+        <button mat-menu-item class="staxter-logout-btn staxter-mat-button" (click)="onLogout()">
           <span>{{ 'LOGOUT' | translate }}</span>
         </button>
       </mat-menu>

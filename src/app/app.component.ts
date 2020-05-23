@@ -3,12 +3,12 @@ import { LanguageService } from './services/language.service';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 
 @Component( {
-  selector: 'real-app',
+  selector: 'staxter-app',
   templateUrl: './app.component.html'
 } )
 export class AppComponent implements OnInit {
 
-  @ViewChild( 'searchUISidebar' ) sidebar: SidebarComponent;
+  @ViewChild('searchUISidebar', { static: true }) sidebar: SidebarComponent;
 
   public currentLanguage: string;
 

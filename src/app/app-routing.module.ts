@@ -8,11 +8,11 @@ import { APP_CONSTANTS } from './app.constant';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: APP_CONSTANTS.PAGES.DASHBOARD.URL,
+    redirectTo: APP_CONSTANTS.SIDEBAR_ITEMS.LATEST_RATES.URL,
     pathMatch: 'full'
   },
   {
-    path: APP_CONSTANTS.PAGES.DASHBOARD.URL,
+    path: APP_CONSTANTS.SIDEBAR_ITEMS.LATEST_RATES.URL,
     component: DashboardComponent
   },
   {

@@ -1,17 +1,17 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { APP_CONSTANTS } from '../../app.constant';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationItem } from '../../app.interfaces';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Component( {
-  selector: 'real-sidebar',
+  selector: 'staxter-sidebar',
   templateUrl: './sidebar.component.html'
 } )
 export class SidebarComponent implements OnInit {
 
-  @ViewChild( 'matSidenav' ) sidebar: MatSidenav;
+  @ViewChild('matSidenav', { static: true }) sidebar: MatSidenav;
 
   public showScrollToTopButton = false;
   public activeNavItem: NavigationItem;
@@ -61,18 +61,24 @@ export class SidebarComponent implements OnInit {
 
     this.navigationItems = [];
 
-    const dashboardItem: NavigationItem = {
-      name: APP_CONSTANTS.PAGES.DASHBOARD.NAME,
-      url: APP_CONSTANTS.PAGES.DASHBOARD.URL,
-      icon: 'dashboard'
+    const LATEST_RATES: NavigationItem = {
+      name: APP_CONSTANTS.SIDEBAR_ITEMS.LATEST_RATES.NAME,
+      url: APP_CONSTANTS.SIDEBAR_ITEMS.LATEST_RATES.URL,
+      icon: APP_CONSTANTS.SIDEBAR_ITEMS.LATEST_RATES.icon
     };
 
-    const dashboard1Item: NavigationItem = {
-      name: 'PAGE_2',
-      url: 'PAGE_2',
-      icon: 'refresh'
+    const LAST_30_DAYS: NavigationItem = {
+      name: APP_CONSTANTS.SIDEBAR_ITEMS.LAST_30_DAYS.NAME,
+      url: APP_CONSTANTS.SIDEBAR_ITEMS.LAST_30_DAYS.URL,
+      icon: APP_CONSTANTS.SIDEBAR_ITEMS.LAST_30_DAYS.icon
     };
 
-    this.navigationItems.push( dashboardItem, dashboard1Item );
+    const TOP_5: NavigationItem = {
+      name: APP_CONSTANTS.SIDEBAR_ITEMS.TOP_5.NAME,
+      url: APP_CONSTANTS.SIDEBAR_ITEMS.TOP_5.URL,
+      icon: APP_CONSTANTS.SIDEBAR_ITEMS.TOP_5.icon
+    };
+
+    this.navigationItems.push( LATEST_RATES, LAST_30_DAYS, TOP_5 );
   }
 }

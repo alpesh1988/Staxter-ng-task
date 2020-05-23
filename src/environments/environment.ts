@@ -5,10 +5,6 @@
 export const environment = {
   production: false,
   ENV_SEARCH_URL: 'http://localhost:18080/v1',
-  KEYCLOAK_ROOT_URL: 'https://keycloak-keycloak.service-ci.efood.real-pp.de/auth',
-  ENV_SEARCH_COCKPIT_KEYCLOAK_REALM: 'real',
-  ENV_SEARCH_COCKPIT_KEYCLOAK_CLIENT_ID: 'searchCockpit',
-  KEYCLOAK_CLIENT_SECRET: '8d5e4bfd-c784-4db6-ac03-5dbc3d0b56e2',
   cacheBusterHash: 'buildHashString'
 };
 

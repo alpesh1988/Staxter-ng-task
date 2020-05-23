@@ -17397,20 +17397,20 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #ccc; } }
 
-.real-sidenav-container {
+.staxter-sidenav-container {
   height: 100vh; }
 
-.real-sidenav-container.mat-drawer-container {
+.staxter-sidenav-container.mat-drawer-container {
   background: none; }
 
-.real-sidebar-menu {
+.staxter-sidebar-menu {
   margin-left: 0.5rem; }
 
 .mat-list, .mat-nav-list,
 .mat-selection-list {
   padding-top: 1px; }
 
-#real-scroll-to-top-btn {
+#staxter-scroll-to-top-btn {
   bottom: 3rem;
   border-radius: 20px;
   background: #003a70;
@@ -17424,7 +17424,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 40px;
   z-index: 100; }
 
-.real-scroll-to-top-icon {
+.staxter-scroll-to-top-icon {
   font-size: 2rem;
   height: 32px;
   width: 32px; }
@@ -17433,69 +17433,69 @@ body {
   margin: 0;
   /* Starts here - Common classses that can be used across pages */
   /* Ends here - Common classses that can be used across pages */ }
-  body .real-spinner .black-overlay,
-  body .real-spinner .loading-text {
+  body .staxter-spinner .black-overlay,
+  body .staxter-spinner .loading-text {
     position: fixed !important; }
-  body .real-body-container {
+  body .staxter-body-container {
     background: none;
     margin: 1.5rem 2rem 8rem; }
-  body #real-page-title {
+  body #staxter-page-title {
     color: #66615b;
     font-weight: 400;
     margin-bottom: 1rem; }
-  body .real-tooltip {
+  body .staxter-tooltip {
     background: #000;
     border-radius: 4px;
     font-size: 0.75rem; }
   body .form-control:focus {
     box-shadow: 0 0 0 0.1rem rgba(63, 81, 181, 0.25) !important;
     outline: none; }
-  body .real-sidebar-list-item {
+  body .staxter-sidebar-list-item {
     outline: 0; }
-    body .real-sidebar-list-item:hover {
+    body .staxter-sidebar-list-item:hover {
       background: #003a70; }
-    body .real-sidebar-list-item.active {
+    body .staxter-sidebar-list-item.active {
       background: #003a70;
       color: #fff;
       outline: 0; }
-      body .real-sidebar-list-item.active:hover {
+      body .staxter-sidebar-list-item.active:hover {
         background: #003a70; }
-  body #real-sidebar-header {
+  body #staxter-sidebar-header {
     background: #003a70; }
-  body .real-sidebar-close-btn {
+  body .staxter-sidebar-close-btn {
     background: #fff; }
-  body table.real-table {
+  body table.staxter-table {
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%; }
-    body table.real-table th.mat-header-cell {
+    body table.staxter-table th.mat-header-cell {
       background: #6c7ae0;
       color: #fff;
       font-size: 1rem; }
-      body table.real-table th.mat-header-cell .mat-sort-header-arrow {
+      body table.staxter-table th.mat-header-cell .mat-sort-header-arrow {
         color: #fff; }
-    body table.real-table th.mat-header-cell, body table.real-table td.mat-cell {
+    body table.staxter-table th.mat-header-cell, body table.staxter-table td.mat-cell {
       padding-bottom: 0.5rem;
       padding-left: 1rem;
       padding-top: 0.5rem; }
-    body table.real-table th.real-column-right,
-    body table.real-table td.real-column-right {
+    body table.staxter-table th.staxter-column-right,
+    body table.staxter-table td.staxter-column-right {
       padding-right: 1rem;
       text-align: right; }
-    body table.real-table th.real-column-right .mat-sort-header-container {
+    body table.staxter-table th.staxter-column-right .mat-sort-header-container {
       justify-content: flex-end; }
-    body table.real-table th.real-column-center,
-    body table.real-table td.real-column-center {
+    body table.staxter-table th.staxter-column-center,
+    body table.staxter-table td.staxter-column-center {
       text-align: center; }
-    body table.real-table th.real-column-center .mat-sort-header-container {
+    body table.staxter-table th.staxter-column-center .mat-sort-header-container {
       justify-content: center; }
-  body .real-login-form mat-form-field {
+  body .staxter-login-form mat-form-field {
     display: block; }
-  body .real-login-btn {
+  body .staxter-login-btn {
     border-radius: 4px;
     font-size: 1.125rem;
     line-height: 3rem;
     width: 100%; }
-  body .real-legend {
+  body .staxter-legend {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-left: 2rem;
@@ -17509,7 +17509,7 @@ body {
     word-break: break-word; }
   body .mat-error {
     font-size: 0.875rem; }
-  body .real-paginator-container {
+  body .staxter-paginator-container {
     border: 1px solid rgba(0, 0, 0, 0.12) !important; }
   body .btn + .btn {
     margin-left: 0.5rem; }
@@ -17520,52 +17520,52 @@ body {
   body button:focus {
     box-shadow: none;
     outline: 0; }
-  body .real-mat-icon {
+  body .staxter-mat-icon {
     font-size: 2rem;
     margin-right: 0.875rem;
     margin-top: 0.225rem;
     vertical-align: text-bottom; }
-  body .real-alert-message {
+  body .staxter-alert-message {
     padding: 1rem;
     position: relative; }
-    body .real-alert-message div {
+    body .staxter-alert-message div {
       cursor: pointer;
       position: absolute;
       right: 2rem;
       top: 0.925rem; }
-    body .real-alert-message .real-times-circle {
+    body .staxter-alert-message .staxter-times-circle {
       font-size: 1.5rem; }
-  body button.real-mat-button {
+  body button.staxter-mat-button {
     outline: none; }
-    body button.real-mat-button:focus {
+    body button.staxter-mat-button:focus {
       outline: none; }
   body .mat-header-cell .mat-sort-header-container.mat-sort-header-sorted .mat-sort-header-arrow {
     opacity: 1 !important; }
-  body .real-cursor-pointer {
+  body .staxter-cursor-pointer {
     cursor: pointer; }
-  body .real-cursor-not-allowed {
+  body .staxter-cursor-not-allowed {
     cursor: not-allowed; }
-  body .real-float-right {
+  body .staxter-float-right {
     float: right; }
-  body .real-clear {
+  body .staxter-clear {
     clear: both; }
-  body .real-mt-1 {
+  body .staxter-mt-1 {
     margin-top: 1rem; }
-  body .real-mb-1 {
+  body .staxter-mb-1 {
     margin-bottom: 1rem; }
-  body .real-mb-half {
+  body .staxter-mb-half {
     margin-bottom: 0.5rem; }
-  body .real-mr-1 {
+  body .staxter-mr-1 {
     margin-right: 1rem; }
-  body .real-mr-half {
+  body .staxter-mr-half {
     margin-right: 0.5rem; }
-  body .real-p-1-5 {
+  body .staxter-p-1-5 {
     padding: 1.5rem; }
-  body .real-pos-rel {
+  body .staxter-pos-rel {
     position: relative; }
-  body .real-display-if {
+  body .staxter-display-if {
     display: inline-flex; }
-  body .real-vertical-align-middle {
+  body .staxter-vertical-align-middle {
     vertical-align: middle; }
   @media only screen and (max-width: 992px) {
     body #realLanguagedropdownMenuButton {
@@ -24661,22 +24661,22 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #ccc; } }
 
-.real-logo {
+.staxter-logo {
   background: #fff;
   border-radius: 4px;
   height: 50px;
   padding: 5px 10px;
   vertical-align: middle; }
 
-#real-header-mat-toolbar {
+#staxter-header-mat-toolbar {
   background: #003a70;
   color: #fff; }
 
-#real-full-app-title,
-#real-short-app-title {
+#staxter-full-app-title,
+#staxter-short-app-title {
   margin-left: 0.675rem; }
 
-.real-hamburger-menu {
+.staxter-hamburger-menu {
   background: #003a70;
   margin: 0 0.5rem;
   padding: 0;
@@ -24685,32 +24685,32 @@ a.text-dark:hover, a.text-dark:focus {
 .mat-toolbar-row, .mat-toolbar-single-row {
   padding: 0; }
 
-.real-logout-btn {
+.staxter-logout-btn {
   font-size: 1rem; }
 
-.real-mat-icon-face {
+.staxter-mat-icon-face {
   margin-right: 0.225rem;
   vertical-align: text-bottom; }
 
-.real-language-dropdown {
+.staxter-language-dropdown {
   background: none;
   color: #fff !important;
   margin-right: 0.5rem;
   max-width: 7rem;
   vertical-align: bottom; }
 
-.real-current-language-selected {
+.staxter-current-language-selected {
   margin: 0 0.275rem; }
 
-.real-flag-icon {
+.staxter-flag-icon {
   margin-right: 0.3rem; }
 
-.real-country-name {
+.staxter-country-name {
   margin-right: 1rem; }
 
-.real-language-dropdown-menu {
+.staxter-language-dropdown-menu {
   min-width: 1rem; }
-  .real-language-dropdown-menu a:active {
+  .staxter-language-dropdown-menu a:active {
     color: #fff; }
 
 table {

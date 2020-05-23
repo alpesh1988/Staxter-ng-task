@@ -1,22 +1,21 @@
 @import "variables";
 
-.real-logo {
+.staxter-logo {
   background: $white;
   border-radius: 4px;
   height: 50px;
-  padding: 5px 10px;
   vertical-align: middle;
 }
-#real-header-mat-toolbar {
-  background: $real-app-main-color;
+#staxter-header-mat-toolbar {
+  background: $staxter-app-main-color;
   color: $white;
 }
-#real-full-app-title,
-#real-short-app-title {
+#staxter-full-app-title,
+#staxter-short-app-title {
   margin-left: 0.675rem;
 }
-.real-hamburger-menu {
-  background: $real-app-main-color;
+.staxter-hamburger-menu {
+  background: $staxter-app-main-color;
   margin: 0 0.5rem;
   padding: 0;
   min-width: 40px;
@@ -24,30 +23,30 @@
 .mat-toolbar-row, .mat-toolbar-single-row {
   padding: 0;
 }
-.real-logout-btn {
+.staxter-logout-btn {
   font-size: 1rem;
 }
-.real-mat-icon-face {
+.staxter-mat-icon-face {
   margin-right: 0.225rem;
   vertical-align: text-bottom;
 }
-.real-language-dropdown {
+.staxter-language-dropdown {
   background: none;
   color: $white !important;
   margin-right: 0.5rem;
   max-width: 7rem;
   vertical-align: bottom;
 } 
-.real-current-language-selected {
+.staxter-current-language-selected {
   margin: 0 0.275rem;
 }
-.real-flag-icon {
+.staxter-flag-icon {
   margin-right: 0.3rem;
 }
-.real-country-name {
+.staxter-country-name {
   margin-right: 1rem;
 }
-.real-language-dropdown-menu {
+.staxter-language-dropdown-menu {
   min-width: 1rem;
 
   a {

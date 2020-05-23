@@ -1,11 +1,10 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { KeycloakService } from 'keycloak-angular';
 import { APP_CONSTANTS } from '../../app.constant';
 import { LanguageService } from '../../services/language.service';
 
 @Component( {
-  selector: 'real-header',
+  selector: 'staxter-header',
   templateUrl: './header.component.html'
 } )
 export class HeaderComponent implements OnInit {
@@ -19,7 +18,6 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     public translate: TranslateService,
-    private keycloakService: KeycloakService,
     private languageService: LanguageService
   ) {
   }
@@ -31,7 +29,7 @@ export class HeaderComponent implements OnInit {
         .filter( availableLanguageObject => availableLanguageObject.default === true )[ 0 ],
       /* get localstorage value
         If no value set, then take default language  */
-      localLanguage = localStorage.getItem( APP_CONSTANTS.REAL_CURRENT_LANGUAGE ) || defaultLanguageObject.COUNTRY_CODE,
+      localLanguage = localStorage.getItem( APP_CONSTANTS.STAXTER_CURRENT_LANGUAGE ) || defaultLanguageObject.COUNTRY_CODE,
       /* get default language object as per localstorage value
       If no value set, then take default language  */
       localLanguageObject = APP_CONSTANTS.AVAILABLE_LANGUAGES
@@ -45,8 +43,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public onLogout(): void {
-    localStorage.removeItem( APP_CONSTANTS.REAL_CURRENT_LANGUAGE );
-    this.keycloakService.logout();
+    localStorage.removeItem( APP_CONSTANTS.STAXTER_CURRENT_LANGUAGE );
   }
 
   public setCurrentLanguage( language ): void {
@@ -55,7 +52,7 @@ export class HeaderComponent implements OnInit {
     this.translate.use( language.COUNTRY_CODE );
     this.translate.currentLang = language.COUNTRY_CODE;
     this.languageService.changeLanguage( language.COUNTRY_CODE.toUpperCase() );
-    localStorage.setItem( APP_CONSTANTS.REAL_CURRENT_LANGUAGE, language.COUNTRY_CODE );
+    localStorage.setItem( APP_CONSTANTS.STAXTER_CURRENT_LANGUAGE, language.COUNTRY_CODE );
   }
 
 }

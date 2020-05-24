@@ -34,10 +34,20 @@
       color="#fff"
       type="pacman"
       class="staxter-spinner">
-      <p style="font-size: 20px; color: white">Loading...</p>
+      <p style="font-size: 20px; color: white">{{ 'LOADING' | translate }} ...</p>
     </ngx-spinner>
 
     <div class="staxter-body-container" currentLanguage="currentLanguage">
+      <div class="row">
+        <div class="col-lg-12">
+          <mat-form-field id="staxter-base-currency-dropdown" class="pull-right">
+            <mat-label>{{ 'BASE_CURRENCY' | translate }}</mat-label>
+            <mat-select [(value)]="baseCurrency" (selectionChange)="baseCurrencyChange(baseCurrency)">
+              <mat-option [value]="option.value" *ngFor="let option of baseCurrencies">{{ option.viewValue }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
       <router-outlet></router-outlet>
     </div>
 

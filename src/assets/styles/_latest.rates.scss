@@ -1,0 +1,27 @@
+#staxter-latest-rates-table {
+    th {
+        &.mat-column-currencyName {
+            width: 25%;
+        }
+        &.mat-column-currencyValue {
+            width: 25%;
+        }
+        &.mat-column-change {
+            width: 25%;
+        }
+        &.mat-column-chart {
+            width: 25%;
+        }
+    }
+    td {
+        .staxter-arrow-upward {
+            color: $staxter-arrow-up;
+        }
+        .staxter-arrow-downward {
+            color: $staxter-arrow-down;
+        }
+        .staxter-equal {
+            color: $staxter-equal;
+        }
+    }
+}

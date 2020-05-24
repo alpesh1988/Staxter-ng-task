@@ -2,8 +2,13 @@
   "SITE_NAME": "STAXTER",
   "SITE_NAME_SHORT": "STAXTER",
   "DASHBOARD": "Dashboard",
-  "DASHBOARD_TITLE": "Dashboard",
-  "PAGE_2": "Page 2",
+  "LATEST_RATES_TITLE": "Latest Rates",
   "LOGOUT": "Logout",
-  "SCROLL_TO_TOP": "Scroll to top"
+  "SCROLL_TO_TOP": "Scroll to top",
+  "LATEST_RATES_TABLE_COLUMN_CURRENCY": "Currency",
+  "LATEST_RATES_TABLE_COLUMN_SPOT": "Spot",
+  "LATEST_RATES_TABLE_COLUMN_CHANGE": "Increase/Decrease",
+  "LATEST_RATES_TABLE_COLUMN_CHART": "Chart",
+  "BASE_CURRENCY": "Base currency",
+  "LOADING": "Loading"
 }

@@ -1,9 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { APP_CONSTANTS } from '../../app.constant';
 import { MatSidenav } from '@angular/material/sidenav';
-import { NavigationItem } from '../../app.interfaces';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { APP_CONSTANTS } from '../../app.constant';
+import { NavigationItem } from '../../app.interfaces';
+import { BaseCurrencies } from '../../interface/base.currencies.interface';
+import { BaseCurrencyService } from '../../services/base.currency.service';
 
 @Component( {
   selector: 'staxter-sidebar',
@@ -17,8 +19,13 @@ export class SidebarComponent implements OnInit {
   public activeNavItem: NavigationItem;
   public navigationItems: Array<NavigationItem>;
 
-  constructor( private router: Router ) {
-  }
+  baseCurrencies: BaseCurrencies[] = APP_CONSTANTS.BASE_CURRENCIES;
+  baseCurrency: string = APP_CONSTANTS.BASE_CURRENCIES.filter(currency => currency.default === true)[0].value;
+
+  constructor( 
+    private router: Router,
+    private baseCurrencyService: BaseCurrencyService
+  ) {}
 
   public ngOnInit(): void {
     this.initializeNavItems();
@@ -33,6 +40,10 @@ export class SidebarComponent implements OnInit {
           }
         }
       } );
+  }
+
+  public baseCurrencyChange(baseCurrency):void {
+    this.baseCurrencyService.changeCurrency(baseCurrency);
   }
 
   public scrollHandler(): void {

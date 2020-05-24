@@ -1,0 +1,36 @@
+<h2 class="staxter-page-title"> {{ 'LATEST_RATES_TITLE' | translate }} </h2>
+
+<table id="staxter-latest-rates-table" mat-table [dataSource]="dataSource" class="mat-elevation-z8 staxter-table table-striped">
+
+  <!-- currencyName Column -->
+  <ng-container matColumnDef="currencyName">
+    <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'LATEST_RATES_TABLE_COLUMN_CURRENCY' | translate }} </th>
+    <td mat-cell *matCellDef="let element" class="staxter-column-center"> {{element.currencyName }} </td>
+  </ng-container>
+
+  <!-- currencyValue Column -->
+  <ng-container matColumnDef="currencyValue">
+    <th mat-header-cell *matHeaderCellDef class="staxter-column-right">  {{ 'LATEST_RATES_TABLE_COLUMN_SPOT' | translate }} </th>
+    <td mat-cell *matCellDef="let element" class="staxter-column-right"> {{ element.currencyValue }} </td>
+    <!-- | currency: element.currencyName : 'symbol':'1.2-2' -->
+  </ng-container>
+
+  <!-- change Column -->
+  <ng-container matColumnDef="change">
+    <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'LATEST_RATES_TABLE_COLUMN_CHANGE' | translate }} </th>
+    <td mat-cell *matCellDef="let element" class="staxter-column-center"> 
+      <mat-icon class="material-icons" [ngClass]="applyClass(element)"> {{ showIcon(element) }} </mat-icon>
+    </td>
+  </ng-container>
+
+  <!-- chart Column -->
+  <ng-container matColumnDef="chart">
+    <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'LATEST_RATES_TABLE_COLUMN_CHART' | translate }} </th>
+    <td mat-cell *matCellDef="let element" class="staxter-column-center"> 
+      <mat-icon class="material-icons">insert_chart_outlined</mat-icon>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

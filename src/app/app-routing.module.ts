@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LatestRatesComponent } from './pages/latest.rates/latest.rates.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { APP_CONSTANTS } from './app.constant';
 
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: APP_CONSTANTS.SIDEBAR_ITEMS.LATEST_RATES.URL,
-    component: DashboardComponent
+    component: LatestRatesComponent
   },
   {
     path: '**',

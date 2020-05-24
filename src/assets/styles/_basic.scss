@@ -12,6 +12,12 @@ body {
   .staxter-body-container {
     background: none;
     margin: 1.5rem 2rem 8rem;
+
+    #staxter-base-currency-dropdown {
+      position: absolute;
+      right: 1rem;
+      top: 0;
+    }
   }
 
   .staxter-page-title {

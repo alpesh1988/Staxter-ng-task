@@ -2,7 +2,7 @@
  * Modules
  */
 import { BrowserModule } from '@angular/platform-browser';
-import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,15 +14,17 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 /**
  * Services
  */
+import { BaseCurrencyService } from './services/base.currency.service';
 import { LanguageService } from './services/language.service';
 import { UserService } from './services/user.service';
+import { LatestRatesService } from './services/latest.rates.service';
 
 /**
  * Components
  */
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LatestRatesComponent } from './pages/latest.rates/latest.rates.component';
 import { HeaderComponent } from './common/header/header.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -37,7 +39,7 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
 @NgModule( {
   declarations: [
     AppComponent,
-    DashboardComponent,
+    LatestRatesComponent,
     HeaderComponent,
     SidebarComponent,
     PageNotFoundComponent
@@ -53,8 +55,10 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
   ],
   entryComponents: [],
   providers: [
+    BaseCurrencyService,
     LanguageService,
-    UserService
+    UserService,
+    LatestRatesService
   ],
   bootstrap: [ AppComponent ]
 } )

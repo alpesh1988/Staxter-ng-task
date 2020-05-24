@@ -22,4 +22,24 @@ export const APP_CONSTANTS = {
     LAST_30_DAYS: { NAME: 'Last 30 days', URL: 'last_30_days', icon: 'replay_30' },
     TOP_5: { NAME: 'Top 5', URL: 'top_5', icon: 'looks_5' }
   },
+  REST_API_SERVER: 'https://api.exchangeratesapi.io/',
+  LATEST: 'latest',
+  BASE: 'base',
+  LATEST_RATES_TABLE_COLUMNS: ['currencyName', 'currencyValue', 'change', 'chart'],
+  BASE_CURRENCIES: [{
+    value: 'EUR',
+    viewValue: 'EUR(€)',
+    default: true
+  }, {
+    value: 'USD',
+    viewValue: 'USD($)',
+    default: false
+  }, {
+    value: 'GBP',
+    viewValue: 'GBP(£)',
+    default: false
+  }],
+  INCREASED: "Increased",
+  DECREASED: "Decreased",
+  EQUAL: "Equal"
 };

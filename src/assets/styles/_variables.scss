@@ -7,10 +7,13 @@ $primary: #05729d;
 $border-color: $light-grey;
 $border-radius: 4px;
 
-$table-header-bg: #6c7ae0;
+$table-header-bg: $primary;
 $staxter-body-bg-color: #fff;
 
 $staxter-app-accent: #c20834;
+$staxter-arrow-up: #00ff00;
+$staxter-arrow-down: #ff0000;
+$staxter-equal: #0000ff;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 

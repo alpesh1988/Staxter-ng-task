@@ -1,10 +1,10 @@
-export interface LatestRatesInterface {
+export interface ExchangeApiLatestRatesInterface {
     base: string;
     date: string;
     rates: object;
 }
 
-export interface LatestRatesDataInterface {
+export interface ExchangeApiLatestRatesDataInterface {
     currencyName: string;
     currencyValue: number;
 }

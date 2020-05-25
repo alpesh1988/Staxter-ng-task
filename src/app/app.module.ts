@@ -17,7 +17,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { BaseCurrencyService } from './services/base.currency.service';
 import { LanguageService } from './services/language.service';
 import { UserService } from './services/user.service';
-import { LatestRatesService } from './services/latest.rates.service';
+import { ExchangeApiService } from './services/exchange.api.service';
 
 /**
  * Components
@@ -60,7 +60,7 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
     BaseCurrencyService,
     LanguageService,
     UserService,
-    LatestRatesService
+    ExchangeApiService
   ],
   bootstrap: [ AppComponent ]
 } )

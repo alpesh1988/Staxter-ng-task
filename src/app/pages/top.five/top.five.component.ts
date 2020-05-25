@@ -4,9 +4,9 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { NgxSpinnerService } from "ngx-spinner";
 import { APP_CONSTANTS } from '../../app.constant';
-import { LatestRatesService } from '../../services/latest.rates.service';
+import { ExchangeApiService } from '../../services/exchange.api.service';
 import { BaseCurrencyService } from '../../services/base.currency.service';
-import { LatestRatesInterface, LatestRatesDataInterface } from '../../interface/latest.rates.interface';
+import { ExchangeApiLatestRatesInterface, ExchangeApiLatestRatesDataInterface } from '../../interface/exchange.api.interface';
 import { TopFiveInterface } from '../../interface/top.five.interface';
 
 @Component({
@@ -24,7 +24,7 @@ export class TopFiveComponent implements OnInit {
   destroy$: Subject<boolean> = new Subject<boolean>();
   
   constructor( 
-    private latestRatesService: LatestRatesService,
+    private exchangeApiService: ExchangeApiService,
     private spinner: NgxSpinnerService,
     private baseCurrencyService: BaseCurrencyService
    ) {}
@@ -44,9 +44,9 @@ export class TopFiveComponent implements OnInit {
 
   getLatestRates(date, base): void {
     this.spinner.show();
-    this.latestRatesService.getLatestRates(date, base)
+    this.exchangeApiService.getLatestRates(date, base)
       .pipe(takeUntil(this.destroy$))
-      .subscribe((latestRatesData: LatestRatesInterface) => {
+      .subscribe((latestRatesData: ExchangeApiLatestRatesInterface) => {
         this.tempDataSource = this.formatRates(latestRatesData.rates);
         let previousDate = this.getPreviousDate(latestRatesData);
         this.getLatestRatesForPreviousDate(previousDate);
@@ -73,7 +73,7 @@ export class TopFiveComponent implements OnInit {
   */
   getLatestRatesForPreviousDate(previousDate): void {
 
-    this.latestRatesService.getLatestRates(previousDate, this.baseCurrency).subscribe((latestRatesForPreviousDate: LatestRatesInterface) => {
+    this.exchangeApiService.getLatestRates(previousDate, this.baseCurrency).subscribe((latestRatesForPreviousDate: ExchangeApiLatestRatesInterface) => {
       this.previousDateData = latestRatesForPreviousDate.rates;
       // console.log("latestRatesForPreviousDate: ", latestRatesForPreviousDate);
       this.createSetOfDataForDifferenceInCurrencies();
@@ -84,7 +84,7 @@ export class TopFiveComponent implements OnInit {
     });
   }
 
-  formatRates(rates): LatestRatesDataInterface[] {
+  formatRates(rates): ExchangeApiLatestRatesDataInterface[] {
 
     let formattedRates = [];
 

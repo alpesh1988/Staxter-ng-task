@@ -7,7 +7,7 @@ import { APP_CONSTANTS } from '../app.constant';
 @Injectable({
   providedIn: 'root'
 })
-export class LatestRatesService {
+export class ExchangeApiService {
   
   constructor(
     private httpClient: HttpClient

@@ -6,5 +6,5 @@ export interface LatestRatesInterface {
 
 export interface LatestRatesDataInterface {
     currencyName: string;
-    currencyValue: string;
+    currencyValue: number;
 }

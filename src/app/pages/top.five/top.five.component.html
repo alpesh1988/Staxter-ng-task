@@ -1,0 +1,54 @@
+<h2 class="staxter-page-title"> {{ 'TOP_FIVE_TITLE' | translate }} </h2>
+
+<mat-tab-group mat-align-tabs="center" (selectedTabChange)="tabChanged($event)">
+    <mat-tab label="{{ 'TAB_HEADER_INCREASE' | translate }}">
+        <table id="staxter-top-five-table" mat-table [dataSource]="dataSource" class="mat-elevation-z8 staxter-table table-striped">
+
+            <!-- currencyName Column -->
+            <ng-container matColumnDef="currencyName">
+                <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'TOP_FIVE_TABLE_COLUMN_CURRENCY' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="staxter-column-center"> {{element.currencyName }} </td>
+            </ng-container>
+        
+            <!-- difference Column -->
+            <ng-container matColumnDef="difference">
+                <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'TOP_FIVE_TABLE_COLUMN_DIFFERENCE' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="staxter-column-center"> {{ element.difference | number }} </td>
+            </ng-container>
+    
+            <!-- differencePercentage Column -->
+            <ng-container matColumnDef="differencePercentage">
+                <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'TOP_FIVE_TABLE_COLUMN_DIFFERENCE_PERCENTAGE' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="staxter-column-center"> {{ element.differencePercentage | number }}% </td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="{{ 'TAB_HEADER_DECREASE' | translate }}">      
+        <table id="staxter-top-five-table" mat-table [dataSource]="dataSource" class="mat-elevation-z8 staxter-table table-striped">
+
+            <!-- currencyName Column -->
+            <ng-container matColumnDef="currencyName">
+            <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'TOP_FIVE_TABLE_COLUMN_CURRENCY' | translate }} </th>
+            <td mat-cell *matCellDef="let element" class="staxter-column-center"> {{element.currencyName }} </td>
+            </ng-container>
+    
+            <!-- difference Column -->
+            <ng-container matColumnDef="difference">
+                <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'TOP_FIVE_TABLE_COLUMN_DIFFERENCE' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="staxter-column-center"> {{ element.difference | number }} </td>
+            </ng-container>
+    
+            <!-- differencePercentage Column -->
+            <ng-container matColumnDef="differencePercentage">
+                <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'TOP_FIVE_TABLE_COLUMN_DIFFERENCE_PERCENTAGE' | translate }} </th>
+                <td mat-cell *matCellDef="let element" class="staxter-column-center"> {{ element.differencePercentage | number }}% </td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+</mat-tab-group>

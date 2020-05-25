@@ -41,5 +41,7 @@ export const APP_CONSTANTS = {
   }],
   INCREASED: "Increased",
   DECREASED: "Decreased",
-  EQUAL: "Equal"
+  EQUAL: "Equal",
+  TOP_FIVE_TABLE_COLUMNS: ['currencyName', 'difference', 'differencePercentage'],
+  TOP_CURRENCIES_LIMIT: 5,
 };

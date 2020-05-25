@@ -37,6 +37,16 @@ body {
     outline: none;
   }
 
+  .mat-tab-header {
+    margin-bottom: 1rem;
+  }
+  .mat-tab-label.mat-tab-label-active {
+    background: $secondary;
+    border-radius: 4px;
+    color: $white;
+    opacity: 1;
+  }
+
   table.staxter-table {
     border: 1px solid rgba(0, 0, 0, .1);
     width: 100%;

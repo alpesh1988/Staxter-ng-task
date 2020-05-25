@@ -10,5 +10,11 @@
   "LATEST_RATES_TABLE_COLUMN_CHANGE": "Increase/Decrease",
   "LATEST_RATES_TABLE_COLUMN_CHART": "Chart",
   "BASE_CURRENCY": "Base currency",
-  "LOADING": "Loading"
+  "LOADING": "Loading",
+  "TOP_FIVE_TITLE": "Top 5 currencies",
+  "TOP_FIVE_TABLE_COLUMN_CURRENCY": "Currency",
+  "TOP_FIVE_TABLE_COLUMN_DIFFERENCE": "Difference",
+  "TOP_FIVE_TABLE_COLUMN_DIFFERENCE_PERCENTAGE": "%",
+  "TAB_HEADER_INCREASE": "Increase",
+  "TAB_HEADER_DECREASE": "Decrease"
 }

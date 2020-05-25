@@ -10,5 +10,11 @@
   "LATEST_RATES_TABLE_COLUMN_CHANGE": "Erhöhen/Verringern",
   "LATEST_RATES_TABLE_COLUMN_CHART": "Diagramm",
   "BASE_CURRENCY": "Hauptwährung",
-  "LOADING": "Laden"
+  "LOADING": "Laden",
+  "TOP_FIVE_TITLE": "Top 5 Währungen",
+  "TOP_FIVE_TABLE_COLUMN_CURRENCY": "Währung",
+  "TOP_FIVE_TABLE_COLUMN_DIFFERENCE": "Differenz",
+  "TOP_FIVE_TABLE_COLUMN_DIFFERENCE_PERCENTAGE": "%",
+  "TAB_HEADER_INCREASE": "Erhöhen",
+  "TAB_HEADER_DECREASE": "Verringern"
 }

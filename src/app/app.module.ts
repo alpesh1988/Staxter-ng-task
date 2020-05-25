@@ -29,6 +29,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { SharedModule } from './shared/shared.module';
+import { TopFiveComponent } from './pages/top.five/top.five.component';
 
 
 // AoT requires an exported function for factories
@@ -42,7 +43,8 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
     LatestRatesComponent,
     HeaderComponent,
     SidebarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TopFiveComponent
   ],
   imports: [
     BrowserModule,

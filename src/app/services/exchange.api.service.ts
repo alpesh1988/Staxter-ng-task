@@ -21,6 +21,18 @@ export class ExchangeApiService {
       .pipe(catchError(this.handleError));
   }
 
+  // https://api.exchangeratesapi.io/history?start_at=2020-04-25&end_at=2020-05-25&symbols=USD&base=EUR
+  getLast30DaysRates(startAt, endAt, base, symbols) {
+    let params = new HttpParams();
+    params = params.append(APP_CONSTANTS.START_AT, startAt);
+    params = params.append(APP_CONSTANTS.END_AT, endAt);
+    params = params.append(APP_CONSTANTS.BASE, base);
+    params = params.append(APP_CONSTANTS.SYMBOLS, symbols);
+
+    return this.httpClient.get(APP_CONSTANTS.REST_API_SERVER + APP_CONSTANTS.HISTORY, {params: params})
+      .pipe(catchError(this.handleError));
+  }
+
   handleError(error: HttpErrorResponse) {
     let errorMessage = 'Unknown error!';
     if (error.error instanceof ErrorEvent) {

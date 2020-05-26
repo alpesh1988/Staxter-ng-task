@@ -27,7 +27,9 @@
   <ng-container matColumnDef="chart">
     <th mat-header-cell *matHeaderCellDef class="staxter-column-center"> {{ 'LATEST_RATES_TABLE_COLUMN_CHART' | translate }} </th>
     <td mat-cell *matCellDef="let element" class="staxter-column-center"> 
-      <mat-icon class="material-icons">insert_chart_outlined</mat-icon>
+      <a [routerLink]="element.currencyName">
+        <mat-icon class="material-icons">insert_chart_outlined</mat-icon>
+      </a>
     </td>
   </ng-container>
 

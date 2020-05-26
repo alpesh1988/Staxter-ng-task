@@ -44,4 +44,8 @@ export const APP_CONSTANTS = {
   EQUAL: "Equal",
   TOP_FIVE_TABLE_COLUMNS: ['currencyName', 'difference', 'differencePercentage'],
   TOP_CURRENCIES_LIMIT: 5,
+  HISTORY: 'history',
+  START_AT: 'start_at',
+  END_AT: 'end_at',
+  SYMBOLS: 'symbols'
 };

@@ -16,5 +16,7 @@
   "TOP_FIVE_TABLE_COLUMN_DIFFERENCE": "Difference",
   "TOP_FIVE_TABLE_COLUMN_DIFFERENCE_PERCENTAGE": "%",
   "TAB_HEADER_INCREASE": "Increase",
-  "TAB_HEADER_DECREASE": "Decrease"
+  "TAB_HEADER_DECREASE": "Decrease",
+  "LAST_30_DAYS_TITLE": "Last 30 days",
+  "BACK": "Back"
 }

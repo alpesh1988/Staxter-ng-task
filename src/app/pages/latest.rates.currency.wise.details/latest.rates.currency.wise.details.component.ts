@@ -51,12 +51,18 @@ export class LatestRatesCurrencyWiseDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log("Params: ", this.route.snapshot.params.currency);
+    // console.log("Params: ", this.route.snapshot.params.currency);
     this.symbols = this.route.snapshot.params.currency;
     this.baseCurrencyService.currentBaseCurrency.subscribe( currency => {
       this.baseCurrency = currency;
       this.getLast30DaysData(this.getLast30DaysDate(this.currentDate), this.currentDate, this.baseCurrency, this.symbols );
     });
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next(true);
+    // Unsubscribe from the subject
+    this.destroy$.unsubscribe();
   }
 
   getLast30DaysData(startAt, endAt, base, symbols): void {

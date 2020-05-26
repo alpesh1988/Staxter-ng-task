@@ -47,5 +47,26 @@ export const APP_CONSTANTS = {
   HISTORY: 'history',
   START_AT: 'start_at',
   END_AT: 'end_at',
-  SYMBOLS: 'symbols'
+  SYMBOLS: 'symbols',
+  LAST_30_DAYS_COMPARISON_CURRENCIES: [{
+    value: 'EUR',
+    viewValue: 'EUR(€)',
+    default: false
+  }, {
+    value: 'USD',
+    viewValue: 'USD($)',
+    default: false
+  }, {
+    value: 'GBP',
+    viewValue: 'GBP(£)',
+    default: false
+  }, {
+    value: 'AUD',
+    viewValue: 'AUD($)',
+    default: false
+  }, {
+    value: 'CAD',
+    viewValue: 'CAD($)',
+    default: true
+  }],
 };

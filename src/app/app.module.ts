@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { ChartsModule } from 'ng2-charts';
 
 /**
  * Services
@@ -30,6 +31,8 @@ import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { SharedModule } from './shared/shared.module';
 import { TopFiveComponent } from './pages/top.five/top.five.component';
+import { Last30daysComponent } from './pages/last30days/last30days.component';
+import { LatestRatesCurrencyWiseDetailsComponent } from './pages/latest.rates.currency.wise.details/latest.rates.currency.wise.details.component';
 
 
 // AoT requires an exported function for factories
@@ -44,7 +47,9 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
     HeaderComponent,
     SidebarComponent,
     PageNotFoundComponent,
-    TopFiveComponent
+    TopFiveComponent,
+    Last30daysComponent,
+    LatestRatesCurrencyWiseDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ export function HttpLoaderFactory( httpClient: HttpClient ): TranslateHttpLoader
     FlexLayoutModule,
     AppRoutingModule,
     NgxSpinnerModule,
-    SharedModule
+    SharedModule,
+    ChartsModule
   ],
   entryComponents: [],
   providers: [

@@ -1,0 +1,18 @@
+<h2 class="staxter-page-title"> {{ 'LAST_30_DAYS_TITLE' | translate }} : {{ symbols }} </h2>
+
+<a [routerLink]="[latestRatesURL]" class="staxter-go-back-btn"><mat-icon class="material-icons">arrow_back</mat-icon> {{ 'BACK' | translate }}</a>
+
+<div>
+    <div>
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+  </div>

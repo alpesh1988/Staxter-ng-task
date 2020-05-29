@@ -83,19 +83,21 @@ export class LatestRatesCurrencyWiseDetailsComponent implements OnInit {
   }
 
   setChartData(last30DaysData: ExchangeApiLast30DaysDataInterface): void {
-    let labels = [], chartData = [];
+    let tempArray = [];
     // console.log("last30DaysData.rates:", last30DaysData.rates);
 
     // Iterate each currency
     for( let rate in last30DaysData.rates) {
-      labels.push(rate);
-      chartData.push(last30DaysData.rates[rate][this.symbols].toFixed(4));
+      tempArray.push({
+        chartData: last30DaysData.rates[rate][this.symbols].toFixed(4),
+        labels: new Date(rate)
+      });
     }
-    // console.log("labels:", labels);
-    // console.log("chartData:", chartData);
-    this.barChartLabels = labels;
+    
+    tempArray = tempArray.sort((a,b)=>a.labels-b.labels);
+    this.barChartLabels = tempArray.map(a => a.labels.toISOString().slice(0,10)) ;
     this.barChartData = [
-      { data: chartData, label: this.symbols },
+      { data:  tempArray.map(a => a.chartData) , label: this.symbols },
     ];
   }
 

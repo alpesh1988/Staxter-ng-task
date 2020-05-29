@@ -1,16 +1,16 @@
 #staxter-latest-rates-table {
     th {
         &.mat-column-currencyName {
-            width: 25%;
+            width: 20%;
         }
         &.mat-column-currencyValue {
-            width: 25%;
+            width: 40%;
         }
         &.mat-column-change {
-            width: 25%;
+            width: 20%;
         }
         &.mat-column-chart {
-            width: 25%;
+            width: 20%;
         }
     }
     td {
